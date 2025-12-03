@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    /* CORES */
+  --blue-900: #04043A;
+  --blue-600: #005FE8;
+
+  --gray-200: #E4E4EA;
+  --gray-50:  #F8F8FB;
+  --white:    #FFFFFF;
+
+  --green-400: #16B743;
+  --green-700: #008643;
+
+  --gray-900: #333333;
+
+  /* BRAND */
+  --color-primary: var(--blue-600);
+  --color-primary-dark: var(--blue-900);
+
+  /* TEXTO */
+  --color-text-primary: var(--gray-900);
+  --color-text-inverse: var(--white);
+
+  /* BACKGROUNDS */
+  --color-surface: var(--gray-50);
+  --color-surface-alt: var(--gray-200);
+
+  /* FEEDBACK */
+  --color-success: var(--green-700);
+  --color-success-light: var(--green-400);
+
+  /* TIPOGRAFIA */
+  --font-primary: "Pathway Extreme", sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#menu a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-weight: 700;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+#top-cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: transform .2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--color-success);
+    color: var(--color-text-inverse);
+}
+
+.btn-secondary {
+    background-color: var(--color-surface-alt);
+    color: var(--color-text-primary);
+}
+
+#hero {
+    display: flex;
+    padding: 5rem 2rem;
+    gap: 1rem;
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    flex: 2;
+    max-width: 50%%;
+}
+
+#hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+#hero-img {
+    height: auto;
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
