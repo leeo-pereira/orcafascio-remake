@@ -156,7 +156,7 @@ nav {
 
 #hero {
     display: flex;
-    padding: 5rem 0rem;
+    padding: 8rem 0rem;
     gap: 1rem;
 }
 
@@ -206,13 +206,28 @@ h1 {
     text-align: center;
     line-height: 1.3;
     color: var(--color-primary-dark);
-    padding: 0 5rem;
+    padding-bottom: 2rem;
 }
+
+.clients {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.clients img {
+    height: 50px;
+    filter: grayscale(100%);
+}
+
+/* DEPOIMENTO */
 
 .testimonial-container {
     position: relative;
     width: 60%;
     margin: 0 auto;
+    padding-top: 3rem;
 }
 
 .testimonial-container img {
@@ -258,14 +273,4 @@ h1 {
 
 .play-button {
     transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.clients {
-    display: flex;
-    gap: 2rem;
-}
-
-.clients img {
-    height: 30px;
-    
 }
