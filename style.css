@@ -55,36 +55,36 @@ table {
 
 :root {
     /* CORES */
-  --blue-900: #04043A;
-  --blue-600: #005FE8;
+    --blue-900: #04043A;
+    --blue-600: #005FE8;
 
-  --gray-200: #E4E4EA;
-  --gray-50:  #F8F8FB;
-  --white:    #FFFFFF;
+    --gray-200: #E4E4EA;
+    --gray-50:  #F8F8FB;
+    --white:    #FFFFFF;
 
-  --green-400: #16B743;
-  --green-700: #008643;
+    --green-400: #16B743;
+    --green-700: #008643;
 
-  --gray-900: #333333;
+    --gray-900: #333333;
 
   /* BRAND */
-  --color-primary: var(--blue-600);
-  --color-primary-dark: var(--blue-900);
+    --color-primary: var(--blue-600);
+    --color-primary-dark: var(--blue-900);
 
   /* TEXTO */
-  --color-text-primary: var(--gray-900);
-  --color-text-inverse: var(--white);
+    --color-text-primary: var(--gray-900);
+    --color-text-inverse: var(--white);
 
   /* BACKGROUNDS */
-  --color-surface: var(--gray-50);
-  --color-surface-alt: var(--gray-200);
+    --color-surface: var(--gray-50);
+    --color-surface-alt: var(--gray-200);
 
   /* FEEDBACK */
-  --color-success: var(--green-700);
-  --color-success-light: var(--green-400);
+    --color-success: var(--green-700);
+    --color-success-light: var(--green-400);
 
   /* TIPOGRAFIA */
-  --font-primary: "Pathway Extreme", sans-serif;
+    --font-primary: "Pathway Extreme", sans-serif;
 }
 
 html {
@@ -120,6 +120,7 @@ nav {
 
     & a:hover {
     font-weight: 700;
+    transition: .2s;
     }
 }
 
@@ -136,7 +137,6 @@ nav {
 .btn {
     text-decoration: none;
     padding: 1rem 2rem;
-    transition: transform .2s;
     display: inline-block;
     border-radius: 3px;
 }
@@ -151,12 +151,14 @@ nav {
     color: var(--color-success);
     border: var(--color-success) solid 1px;
     background-color: var(--color-surface);
+    transition: .2s;
 }
 
 .btn-secondary {
     color: var(--color-success);
     border: var(--color-success) solid 1px;
     background-color: var(--color-surface);
+    transition: .2s;
 }
 
 .btn-secondary:hover {
@@ -221,7 +223,7 @@ h1 {
     font-size: 2.5rem;
     line-height: 1.3;
     color: var(--color-primary-dark);
-    font-weight: 500;
+    font-weight: 300;
     padding-left: 3rem;
 }
 
@@ -238,7 +240,7 @@ h1 {
 }
 
 .clients img {
-    height: 50px;
+    height: 55px;
     filter: grayscale(100%);
 }
 
@@ -262,7 +264,6 @@ h1 {
     width: 100%;
     height: auto;
     cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .play-button {
@@ -295,7 +296,7 @@ h1 {
     }
 
 .testimonial-container:hover .play-button {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.3);
     background: rgba(0, 0, 0, 0.9);
 }
 
@@ -305,3 +306,76 @@ h1 {
 
 /* SOLUÇÕES */
 
+#solutions {
+    padding: 4rem 3rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#solutions h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+    font-weight: 600;
+}
+
+.section-description {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.1rem;
+}
+
+#solutions div:first-of-type {
+    padding-top: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.solution-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 5px;
+    transition: .2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 22rem;
+    height: 22rem;
+
+    & img {
+        height: 70px;
+        }
+
+    &:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    & p {
+        line-height: 1.3rem;
+        padding: 1rem 0;
+    }
+
+    & a {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        display: inline-block;
+        color: var(--color-primary);
+    }
+
+    & a::after {
+    content: " \2192";
+}
+}
+
+.btn-solutions {
+    display: block;
+    margin: 3rem auto 5rem;
+    max-width: fit-content;
+}
