@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/8fef19f129.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -252,20 +253,5 @@
 
     <footer></footer>
 
-    <script>
-        const container = document.querySelector('.testimonial-container');
-
-        container.addEventListener('click', function(event) {
-
-            const videoLink = container.dataset.videoUrl;
-            if (videoLink) {
-                window.open(videoLink, '_blank');
-                console.log(`Vídeo ${videoLink} aberto.`);
-            }
-
-            event.stopPropagation();
-        });
-
-    </script>
 </body>
 </html>
