@@ -251,6 +251,17 @@
     </main>
 
     <footer></footer>
-    <script></script>
+
+    <script>
+        const container = document.querySelector('.testimonial-container');
+        container.addEventListener('click', funcion(event) {
+            const videoLink = container.dataset.videoUrl;
+            if (videoLink) {
+                window.open(videoLink, '_blank');
+                console.log(`Vídeo ${videoLink} aberto.`);
+            }
+            event.stopPropagation();
+        });
+    </script>
 </body>
 </html>
