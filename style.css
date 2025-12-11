@@ -170,20 +170,25 @@ nav {
 /* HERO */
 
 #hero {
-    display: flex;
-    padding: 3rem 3rem 4rem 3rem;
-    gap: 2rem;
-    max-width: 1300px;
-    margin: 0 auto;
+    background-image: url(img/Hero.avif);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: minmax(400px, 50%) 1fr;
+    min-height: 500px;
 }
 
 #hero-content {
+    grid-column: 1 / 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    justify-content: space-around;
-    flex: 2;
-    max-width: 60%;
+    justify-content: center;
 }
 
 #hero-cta {
@@ -196,13 +201,6 @@ nav {
     font-size: 1.3rem;
     line-height: 1.5;
     padding-bottom: 1rem;
-}
-
-#hero-img {
-    height: auto;
-    max-width: 100%;
-    min-width: 0;
-    flex: 1;
 }
 
 h1 {
