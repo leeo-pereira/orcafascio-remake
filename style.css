@@ -171,20 +171,25 @@ nav {
 
 #hero {
     background-image: url(img/Hero.avif);
-    background-size: cover;
+    background-size: 30rem;
     background-position: right;
     background-repeat: no-repeat;
 
     display: grid;
     grid-template-columns: minmax(400px, 50%) 1fr;
     min-height: 500px;
+    max-width: 1300px;
+    padding: 4rem 3rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+        background-image: none;
+        grid-template-columns: auto;
+    }
 }
 
 #hero-content {
     grid-column: 1 / 2;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -198,13 +203,13 @@ nav {
 }
 
 #hero p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
     line-height: 1.5;
     padding-bottom: 1rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 700;
     color: var(--color-primary);
     line-height: 1.2;
@@ -218,11 +223,15 @@ h1 {
 }
 
 #social-proof h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
     line-height: 1.3;
     color: var(--color-primary-dark);
     font-weight: 300;
     padding-left: 3rem;
+
+    @media screen and (max-width: 900px) {
+        padding: 2rem
+    }
 }
 
 .destaque {
@@ -243,11 +252,19 @@ h1 {
 }
 
 #testimonial-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(400px, 50%) 1fr;
+    min-height: 500px;
+    max-width: 1300px;
+    padding: 4rem 3rem;
+    margin: 0 auto;
     align-items: center;
-    padding: 3rem;
-    margin: 2rem auto;
-    width: 70%;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* DEPOIMENTO */
