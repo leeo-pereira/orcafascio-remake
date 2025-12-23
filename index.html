@@ -1,255 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrçaFascio</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OrçaFascio</title>
 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <script src="https://kit.fontawesome.com/8fef19f129.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/8fef19f129.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav>
+            <img
+                src="img/OrcaFascio1_h.svg"
+                alt="Logo da OrçaFascio"
+                id="logo"
+            />
 
-</head>
-<body>
+            <ul id="menu">
+                <li><a href="#">Soluções</a></li>
+                <li><a href="#">Conteúdo</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
 
-    <!-- NAV -->
-    <nav>
-        <img src="img/OrcaFascio1_h.svg" alt="Logo da OrçaFascio" id="logo">
-
-        <ul id="menu">
-            <li><a href="#">Soluções</a></li>
-            <li><a href="#">Conteúdo</a></li>
-            <li><a href="#">Preços</a></li>
-            <li><a href="#">Suporte</a></li>
-        </ul>
-
-        <div id="top-cta">
-            <a href="" class="btn btn-primary">Teste grátis</a>
-            <a href="" class="btn btn-secondary">Acesse</a>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <header id="hero">
-        <div id="hero-content">
-            <h1>A tecnologia mais completa e usada em obras no Brasil</h1>
-            <p>Do orçamento de obra ao BIM, a OrçaFascio é a solução ideal para órgãos públicos, profissionais e empresas da construção civil que precisam de mais agilidade e eficiência na gestão de canteiros.</p>
-
-            <div id="hero-cta">
+            <div id="top-cta">
                 <a href="" class="btn btn-primary">Teste grátis</a>
-                <a href="" class="btn btn-secondary">Conheça a plataforma</a>
+                <a href="" class="btn btn-secondary">Acesse</a>
             </div>
-        </div>
-    </header>
+        </nav>
 
-    <main>
+        <!-- HERO -->
+        <header id="hero">
+            <div id="hero-content">
+                <h1>A tecnologia mais completa e usada em obras no Brasil</h1>
+                <p>
+                    Do orçamento de obra ao BIM, a OrçaFascio é a solução ideal
+                    para órgãos públicos, profissionais e empresas da construção
+                    civil que precisam de mais agilidade e eficiência na gestão
+                    de canteiros.
+                </p>
 
-    <!-- SOCIAL PROOF -->
-    <section id="social-proof">
-        <div class="clients">
-            <img src="img/clients/1-Senado.avif" alt="">
-            <img src="img/clients/2-ANATEL.avif" alt="">
-            <img src="img/clients/3-TEGRA.avif" alt="">
-            <img src="img/clients/4-USP.avif" alt="">
-            <img src="img/clients/5-UFRJ.avif" alt="">
-            <img src="img/clients/6-TSE-CE.avif" alt="">
-            <img src="img/clients/7-DETRAN.avif" alt="">
-            <img src="img/clients/8-UNESP.avif" alt="">
-            <img src="img/clients/9-CR-FONTES.avif" alt="">
-            <img src="img/clients/10-MSM.avif" alt="">
-        </div>
-        
-        <div id="testimonial-section">
-            <div class="testimonial-container" data-video-url="https://www.youtube.com/watch?v=tG-lQx58mWE">
-                <img src="img/Thumb_depoimento.png" alt="Depoimento de Gabriela Kramer">
-                
-                <button class="play-button" aria-label="Reproduzir vídeo">
-                <i class="fa-solid fa-play"></i>
-                </button>
+                <div id="hero-cta">
+                    <a href="" class="btn btn-primary">Teste grátis</a>
+                    <a href="" class="btn btn-secondary"
+                        >Conheça a plataforma</a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- SOCIAL PROOF -->
+            <section id="social-proof">
+                <div class="clients logos-slider">
+                    <div class="logos-track"></div>
+                </div>
+
+                <div id="testimonial-section">
+                    <div class="testimonial-container" data-video-url="">
+                        <img
+                            src="img/Thumb_depoimento.png"
+                            alt="Depoimento de Gabriela Kramer"
+                        />
+
+                        <a
+                            href="https://www.youtube.com/watch?v=tG-lQx58mWE"
+                            target="_blank"
+                            class="play-link-overlay"
+                            aria-label="Reproduzir vídeo"
+                        >
+                            <div class="play-button-visual">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <h2>
+                        <span class="destaque">6.000+ clientes</span> confiam na
+                        OrçaFascio para gerenciar orçamentos e obras com
+                        eficiência
+                    </h2>
+                </div>
+            </section>
+
+            <!-- SOLUTIONS -->
+            <section id="solutions">
+                <h2>Onde tem obra, tem OrçaFascio</h2>
+                <p class="section-description">
+                    Soluções para orçamento, licitação de obras e otimização BIM
+                    para empreendedores, construtoras, incorporadoras e órgãos
+                    públicos.
+                </p>
+
+                <!-- MÓDULOS -->
+                <div id="container-modulos" class="cards"></div>
+
+                <a class="btn btn-primary btn-solutions" href="#"
+                    >Conheça todos os módulos</a
+                >
+
+                <hr />
+
+                <!-- PLUGINS -->
+                <div id="container-plugins" class="cards"></div>
+
+                <a class="btn btn-primary btn-solutions" href="#"
+                    >Conheça todos os plugins</a
+                >
+            </section>
+
+            <!-- BENEFITS -->
+            <section id="benefits">
+                <div class="benefits-header">
+                    <h2>Por que escolher a OrçaFascio?</h2>
+                    <p>
+                        A tecnologia que transforma a engenharia em números
+                        precisos.
+                    </p>
+                </div>
+                <div id="container-benefits" class="benefits-grid"></div>
+
+                <div class="cta-banner">
+                    <div class="cta-content">
+                        <h3>Pronto para transformar sua gestão de obras?</h3>
+                        <p>
+                            Junte-se a mais de 6.000 empresas que já economizam
+                            tempo e recursos com a OrçaFascio.
+                        </p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-primary"
+                            >Começar teste gratuito</a
+                        >
+                        <small>Não requer cartão de crédito.</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="img/OrcaFascio1_h.svg" alt="Logo OrçaFascio" />
+                    <p>
+                        A plataforma líder em orçamento e gestão de obras para o
+                        setor público e privado.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Soluções</h4>
+                    <ul>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Conteúdo</a></li>
+                        <li><a href="#">Preços</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <h2><span class="destaque">6.000+ clientes</span> confiam na OrçaFascio para gerenciar orçamentos e obras com eficiência</h2>
-        </div>
-
-    </section>
-
-    <!-- SOLUTIONS -->
-    <section id="solutions">
-        <h2>Onde tem obra, tem OrçaFascio</h2>
-        <p class="section-description">Soluções para orçamento, licitação de obras e otimização BIM para empreendedores, construtoras, incorporadoras e órgãos públicos.</p>
-
-        <!-- MÓDULOS -->
-        <div class="cards">
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_orcamento-c.svg" alt="Orçamento de Obras">
-                </figure>
-
-                <p>Orçamentos SINAPI confiáveis com os padrões de cálculo do software mais inteligente da Engenharia Civil. E, agora, com Cadernos Técnicos.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_bases-c.svg" alt="Bases de Composições">
-                </figure>
-
-                <p>Amplie sua presença em obras pelo Brasil com mais de 20 bases oficiais e 87 mil composições. E, agora, com Cadernos Técnicos.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-        <!--     <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_medicao-c.svg" alt="OF Medição">
-                </figure>
-
-                <p>Aumente a eficiência, mantendo o progresso da obra alinhado aos quantitativos do orçamento de forma simples.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_gestao_de_bases_proprias-c.svg" alt="Gestão de Bases Próprias">
-                </figure>
-
-                <p>Faça o gerenciamento completo e personalizado de bases e composições, com controle de versões, aprovação, retificações e cadernos técnicos.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_planejamento-c.svg" alt="Planejamento">
-                </figure>
-
-                <p>Organize com precisão o cronograma da sua obra e garanta que ela ocorra conforme o custo e prazo planejados.</p>
-
-                <a href="#">Saiba mais</a>
-            </article> -->
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_ofcde-c.svg" alt="OF CDE">
-                </figure>
-
-                <p>A ferramenta da OrçaFascio revoluciona o compartilhamento e a gestão de projetos de obras na nuvem.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-         <!--    <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_diario-c.svg" alt="Diário de Obras">
-                </figure>
-
-                <p>Através do aplicativo, você tem o controle simples e conveniente da sua obra.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_compras-c.svg" alt="Compras">
-                </figure>
-
-                <p>Simplifique e agilize suas transações, centralizando fornecedores e gerenciando suas compras em um só lugar.</p>
-
-                <a href="#">Saiba mais</a>
-            </article> -->
-            
-        </div>
-
-        <a class="btn btn-primary btn-solutions" href="#">Conheça todos os módulos</a>
-
-        <!-- PLUGINS -->
-        <div class="cards">
-            
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_orcabimrevit-c.svg" alt="OrçaBIM para Revit">
-                </figure>
-
-                <p>Simplifique e acelere processos com orçamentos em BIM 5D completos.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <!-- <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_orcabimcivil3d-c.svg" alt="OrçaBIM para Civil 3D">
-                </figure>
-
-                <p>Com eficiência da memória de cálculo, seu projeto no Autodesk Civil 3D vira um orçamento completo em minutos.</p>
-
-                <a href="#">Saiba mais</a>
-            </article> -->
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_ofeletrico-c.svg" alt="OF Elétrico">
-                </figure>
-
-                <p>Elimine tarefas repetitivas e economize horas na elaboração de projetos elétricos no Revit.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_ofhidraulico-c.svg" alt="OF Hidráulico">
-                </figure>
-
-                <p>Crie e documente projetos hidrossanitários com a simplicidade e agilidade de alguns cliques.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <!-- <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_ofestrutural-c.svg" alt="OF Estrutural">
-                </figure>
-
-                <p>Mais produtividade e qualidade superior no detalhamento de estruturas de armações em concreto armado.</p>
-
-                <a href="#">Saiba mais</a>
-            </article>
-
-            <article class="solution-card">
-                <figure>
-                    <img src="img/OFProdutos1_ofbi-c.svg" alt="OF BI">
-                </figure>
-
-                <p>Interaja com os dados de seus modelos BIM no Power BI para obter um controle visual e intuitivo.</p>
-
-                <a href="#">Saiba mais</a>
-            </article> -->
-
-        </div>
-
-        <a class="btn btn-primary btn-solutions" href="#">Conheça todos os plugins</a>
-
-    </section>
-    
-    <!-- JOURNEY -->
-    <section id="journey"></section>
-
-    <!-- FINAL CTA -->
-    <section id="final-cta"></section>
-
-    </main>
-
-    <footer></footer>
-
-</body>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 OrçaFascio. Todos os direitos reservados.
+                    Desenvolvido para fins de estudo.
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
