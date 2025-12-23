@@ -690,12 +690,14 @@ footer {
     .footer-container {
         max-width: 1300px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 3rem;
 
-        @media screen and (max-width: 900px) {
-            grid-template-columns: 1fr;
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             gap: 3rem;
         }
@@ -703,7 +705,7 @@ footer {
 
     .footer-brand {
         img {
-            width: 180px;
+            max-width: 300px;
             margin-bottom: 1.5rem;
             filter: brightness(0) invert(1);
         }
