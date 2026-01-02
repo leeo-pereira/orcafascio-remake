@@ -61,5 +61,35 @@ Isso permitiu:
 ### Responsividade
 Uso de recursos modernos do CSS Grid, como:
 
-```css
+```
+css
 repeat(auto-fit, minmax(300px, 1fr))
+```
+
+Essa abordagem permite que os cards se reorganizem automaticamente conforme o tamanho da tela, reduzindo a necessidade de múltiplas media queries.
+
+---
+
+### Carrossel de logos
+
+Implementação de um carrossel de logos com efeito de rolagem infinita, utilizando @keyframes no CSS e duplicação dinâmica dos elementos via JavaScript, garantindo um loop visual contínuo.
+
+---
+
+## 📚 Aprendizados
+- Importância da hierarquia visual na comunicação de produto
+- Relação direta entre conteúdo, layout e experiência do usuário
+- Organização de código HTML e CSS para facilitar manutenção
+- Uso de JavaScript para evitar repetição e melhorar escalabilidade
+
+---
+
+## 🔮 Próximos Passos
+- Adicionar interações com JavaScript (ex: estados e animações)
+- Melhorar acessibilidade (ARIA, navegação por teclado)
+- Refatorar CSS para maior reutilização
+- Explorar testes A/B para variações de conteúdo
+
+---
+
+**Desenvolvido por [Leonardo Pereira](www.linkedin.com/in/leeopereira)**
