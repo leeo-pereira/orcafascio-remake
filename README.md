@@ -92,4 +92,6 @@ Implementação de um carrossel de logos com efeito de rolagem infinita, utiliza
 
 ---
 
-**Desenvolvido por [Leonardo Pereira](www.linkedin.com/in/leeopereira)**
+**Desenvolvido por Leonardo Pereira**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leeopereira/)
