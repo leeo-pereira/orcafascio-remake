@@ -1,45 +1,65 @@
-# OrçaFascio - Landing Page (Estudo de Caso)
+# OrçaFascio — Landing Page  
+### Estudo de Front-end com foco em UX e Produto
 
-Esta é uma landing page desenvolvida como projeto de estudo, focada em performance, arquitetura de código moderna e responsividade. O objetivo foi reconstruir a interface da plataforma **OrçaFascio**, aplicando conceitos de Front-end e lógica de programação.
+Este projeto é um **estudo de Front-end** baseado em um cenário real de SaaS B2B. O objetivo foi **reorganizar a homepage de uma plataforma de orçamentos**, priorizando clareza da proposta de valor, hierarquia visual e boa experiência do usuário, aplicando conceitos de HTML, CSS e JavaScript.
 
-- [Site atual](https://www.orcafascio.com/)
-- [Site atualizado](https://leeo-pereira.github.io/orcafascio-remake/)
+- 🔗 [Site de referência](https://www.orcafascio.com/)  
+- 🔗 [Versão desenvolvida](https://leeo-pereira.github.io/orcafascio-remake/)
 
+---
+
+## 🎯 Problema & Objetivos
+
+### Problemas identificados
+- Excesso de informações no primeiro scroll  
+- Proposta de valor pouco clara para novos usuários  
+- Hierarquia visual que dificultava a leitura rápida  
+- CTAs pouco destacados  
+
+### Objetivos do projeto
+- Tornar a proposta de valor mais clara logo no topo da página  
+- Melhorar a escaneabilidade do conteúdo  
+- Organizar as seções de acordo com prioridade de negócio  
+- Garantir boa experiência em diferentes tamanhos de tela  
+
+---
 
 ## 🚀 Tecnologias Utilizadas
 
-* **HTML5** Semântico para melhor acessibilidade e SEO.
-* **CSS3** utilizando:
-    * **Nesting** (aninhamento nativo) para organização de código.
-    * **CSS Grid & Flexbox** para layouts complexos e fluidos.
-    * **CSS Masking** para efeitos visuais refinados.
-* **JavaScript** para manipulação do DOM e renderização dinâmica.
-* **Font Awesome** para iconografia profissional.
+- **HTML5 semântico**, com foco em acessibilidade e SEO  
+- **CSS3**, utilizando:
+  - Nesting nativo para melhor organização do código  
+  - **CSS Grid e Flexbox** para layouts responsivos  
+  - **CSS Masking** para efeitos visuais sutis  
+- **JavaScript**, para manipulação do DOM e renderização dinâmica de conteúdo  
+- **Font Awesome**, para iconografia  
 
+---
 
-## 💡 Diferenciais Técnicos
+## 🧩 Decisões de UX e Produto
 
-### 1. Arquitetura de Dados (JS Dinâmico)
-Em vez de um HTML estático e extenso, o conteúdo das seções **Soluções**, **Plugins** e **Benefícios** é gerenciado via JavaScript através de objetos e arrays.
-* **Escalabilidade:** Novos produtos podem ser adicionados apenas alterando o banco de dados local (Array no JS).
-* **Lógica de Filtros:** Utilização de métodos como `.filter()` e `.map()` para organizar e distribuir o conteúdo automaticamente em seus respectivos containers.
+- **Hero section simplificada**, com foco em uma mensagem principal e CTAs claros  
+- **Substituição de formulários longos** por CTAs diretos (boxed CTA), reduzindo fricção  
+- **Agrupamento visual de informações**, facilitando a leitura e compreensão dos benefícios  
+- Organização das seções pensando na jornada do usuário:  
+  *entendimento → prova social → ação*  
 
-### 2. Carrossel de Logos Infinito
-Implementação de um carrossel de clientes com efeito de rolagem infinita (Infinite Scroll) utilizando `@keyframes` e manipulação via JS para duplicação automática dos elementos, garantindo um loop visual sem interrupções.
+---
 
-### 3. Responsividade Inteligente
-Uso de funções modernas do CSS Grid como `repeat(auto-fit, minmax(300px, 1fr))`. Isso permite que os cards se reorganizem sozinhos conforme a largura da tela, reduzindo drasticamente a necessidade de múltiplas Media Queries.
+## ⚙️ Decisões Técnicas
 
-### 4. UI/UX Refinado
-* **CTA Estratégico:** Substituição de formulários densos por banners de conversão direta (Boxed CTA) com gradientes e sombras suaves.
-* **Efeitos Visuais:** Uso de `mask-image` com gradientes lineares para criar um efeito de fade-out nas bordas do slider de logos.
+### Conteúdo dinâmico com JavaScript
+As seções de **Soluções**, **Plugins** e **Benefícios** são geradas dinamicamente a partir de arrays e objetos em JavaScript.
 
+Isso permitiu:
+- Código mais organizado e reutilizável  
+- Facilidade para adicionar ou remover itens  
+- Uso de métodos como `.map()` e `.filter()` para renderização automática  
 
-## 📈 Contexto do Projeto (ADS Journey)
+---
 
-Este projeto marca uma etapa importante na minha transição de carreira do **Jornalismo para Análise e Desenvolvimento de Sistemas**. Ele demonstra a capacidade de transformar requisitos de negócio em código limpo, modular e de fácil manutenção.
+### Responsividade
+Uso de recursos modernos do CSS Grid, como:
 
-
-**Desenvolvido por Leonardo Pereira**
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/seu-perfil](https://www.linkedin.com/in/leeopereira/))
+```css
+repeat(auto-fit, minmax(300px, 1fr))
